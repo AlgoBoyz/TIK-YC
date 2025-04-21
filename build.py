@@ -69,21 +69,21 @@ elif os.name == 'posix':
         if i == platform.machine():
             continue
         shutil.rmtree(local + "/bin/Linux/" + i)
-for i in os.listdir(local):
-    if i not in ['run', 'run.exe', 'bin', 'LICENSE'] and not i.endswith(".py") and not i.endswith(".ico") and not i.endswith(".txt"):
-        print(f"Removing {i}")
-        if os.path.isdir(local + os.sep + i):
-            try:
-                shutil.rmtree(local + os.sep + i)
-            except Exception or OSError as e:
-                print(e)
-        elif os.path.isfile(local + os.sep + i):
-            try:
-                os.remove(local + os.sep + i)
-            except Exception or OSError as e:
-                print(e)
-    else:
-        print(i)
+# for i in os.listdir(local):
+#     if i not in ['run', 'run.exe', 'bin', 'LICENSE'] and not i.endswith(".py") and not i.endswith(".ico") and not i.endswith(".txt"):
+#         print(f"Removing {i}")
+#         if os.path.isdir(local + os.sep + i):
+#             try:
+#                 shutil.rmtree(local + os.sep + i)
+#             except Exception or OSError as e:
+#                 print(e)
+#         elif os.path.isfile(local + os.sep + i):
+#             try:
+#                 os.remove(local + os.sep + i)
+#             except Exception or OSError as e:
+#                 print(e)
+#     else:
+#         print(i)
 if os.name == 'posix':
     for root, dirs, files in os.walk(local, topdown=True):
         for i in files:

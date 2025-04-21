@@ -1,0 +1,37 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="main.mainWin" />
+          <option value="LayerManager_UI.testDialog" />
+          <option value="LayerManager_UI.TestDialog" />
+          <option value="pymel.core.general.PyNode.t" />
+          <option value="pymel.core.general.PyNode.r" />
+          <option value="pymel.core.general.PyNode.centerOfInterest" />
+          <option value="pymel.core.general.PyNode.*" />
+          <option value="Selection_SetUI.testDialog" />
+          <option value="Selection_SetUI.long" />
+          <option value="Selection_SetUI.reload" />
+          <option value="PySide2.QtWidgets.clicked.connect" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
